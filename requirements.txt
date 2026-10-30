@@ -1,0 +1,16 @@
+# Libraries needed to run the project (Python 3.10 or newer).
+# These are minimum versions. The project was built and tested with the exact versions
+# in requirements-tested.txt; older versions may work but were not tested.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+xgboost>=2.0
+shap>=0.44
+matplotlib>=3.7
+seaborn>=0.12
+joblib>=1.3
+streamlit>=1.30
+pytest>=7.0
+notebook>=7.0
+nbformat>=5.9

@@ -1,0 +1,16 @@
+# Exact versions used to build and test this project (Python 3.13.17).
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+streamlit==1.66.1
+pytest==9.1.1
+# notebook: not installed in the build environment (install any recent version)
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel==7.4.0

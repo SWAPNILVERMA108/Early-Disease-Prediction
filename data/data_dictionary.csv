@@ -1,0 +1,9 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description_fill_in
+patient_id,object/numeric,P0001,P0002,P0003,No,"Anonymised unique patient identifier, P0001 to P5000. P0001-P0500 are the original records; P0501-P5000 are AI-generated synthetic records."
+age,object/numeric,30,67,73,No,Patient age in years (range 25-75).
+bmi,object/numeric,20.7,27.7,18.7,No,"Body Mass Index in kg/m2 (range 18.0-39.8), stored with 1 decimal place."
+blood_pressure,object/numeric,136,128,106,No,"Blood pressure reading in mmHg (range 60-140). One value per patient; the source does not say whether it is systolic or diastolic, and the unit is inferred from the value range."
+glucose,object/numeric,156,87,131,No,Blood glucose level in mg/dL (range 70-200). Unit inferred from the value range; fasting or random is not specified.
+cholesterol,object/numeric,191,158,273,No,Total cholesterol in mg/dL (range 150-280). Unit inferred from the value range.
+smoking,object/numeric,1,0,0,No,"Smoking status: 1 = smoker, 0 = non-smoker."
+label,object/numeric,1,1,0,No,"Target variable: 1 = disease present, 0 = no disease. One combined binary label (the project brief names diabetes, heart disease and hypertension; the file does not say which). Exactly 50% / 50% across the full 5,000 rows."

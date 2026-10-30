@@ -1,0 +1,210 @@
+{
+  "trained_at": "2026-10-28T13:45:41",
+  "seconds": 49.7,
+  "versions": {
+    "python": "3.14.2",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  },
+  "settings": {
+    "random_state": 42,
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "search_iterations": 20,
+    "target_recall": 0.85
+  },
+  "data": {
+    "n_rows": 5000,
+    "n_train": 4000,
+    "n_test": 1000,
+    "disease_share_train": 0.5,
+    "disease_share_test": 0.5,
+    "validation": {
+      "n_rows": 5000,
+      "columns_ok": true,
+      "missing_values": 0,
+      "duplicate_ids": 0,
+      "duplicate_rows": 0,
+      "out_of_range": {
+        "age": 0,
+        "bmi": 0,
+        "blood_pressure": 0,
+        "glucose": 0,
+        "cholesterol": 0,
+        "smoking": 0
+      },
+      "label_values_ok": true,
+      "issues": [],
+      "passed": true
+    }
+  },
+  "baseline_majority_class": {
+    "threshold": 0.5,
+    "accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "f1": 0.0,
+    "roc_auc": 0.5,
+    "pr_auc": 0.5,
+    "brier": 0.5,
+    "tn": 500,
+    "fp": 0,
+    "fn": 500,
+    "tp": 0
+  },
+  "models": {
+    "Logistic Regression": {
+      "best_params": {
+        "clf__C": 0.03
+      },
+      "cv_roc_auc_mean": 0.8155587499999999,
+      "cv_roc_auc_std": 0.014038684055138518,
+      "cv_f1": 0.7364261955720058,
+      "cv_recall": 0.7355,
+      "cv_precision": 0.7380377295660225,
+      "cv_accuracy": 0.7369999999999999,
+      "test": {
+        "threshold": 0.5,
+        "accuracy": 0.749,
+        "precision": 0.7485029940119761,
+        "recall": 0.75,
+        "specificity": 0.748,
+        "f1": 0.7492507492507493,
+        "roc_auc": 0.82232,
+        "pr_auc": 0.796484254292246,
+        "brier": 0.1724250420918496,
+        "tn": 374,
+        "fp": 126,
+        "fn": 125,
+        "tp": 375
+      }
+    },
+    "Random Forest": {
+      "best_params": {
+        "clf__n_estimators": 500,
+        "clf__min_samples_leaf": 3,
+        "clf__max_features": "sqrt",
+        "clf__max_depth": 6
+      },
+      "cv_roc_auc_mean": 0.806035,
+      "cv_roc_auc_std": 0.015316659945138105,
+      "cv_f1": 0.73359405975907,
+      "cv_recall": 0.742,
+      "cv_precision": 0.726386843154067,
+      "cv_accuracy": 0.73075,
+      "test": {
+        "threshold": 0.5,
+        "accuracy": 0.743,
+        "precision": 0.7405940594059406,
+        "recall": 0.748,
+        "specificity": 0.738,
+        "f1": 0.7442786069651741,
+        "roc_auc": 0.8160959999999999,
+        "pr_auc": 0.784159387370716,
+        "brier": 0.17790564373934953,
+        "tn": 369,
+        "fp": 131,
+        "fn": 126,
+        "tp": 374
+      }
+    },
+    "XGBoost": {
+      "best_params": {
+        "clf__subsample": 0.85,
+        "clf__reg_lambda": 10,
+        "clf__n_estimators": 400,
+        "clf__min_child_weight": 1,
+        "clf__max_depth": 2,
+        "clf__learning_rate": 0.03,
+        "clf__colsample_bytree": 0.7
+      },
+      "cv_roc_auc_mean": 0.8092024999999999,
+      "cv_roc_auc_std": 0.014164392305178516,
+      "cv_f1": 0.736365560919427,
+      "cv_recall": 0.7415,
+      "cv_precision": 0.7321719560001647,
+      "cv_accuracy": 0.73475,
+      "test": {
+        "threshold": 0.5,
+        "accuracy": 0.74,
+        "precision": 0.74,
+        "recall": 0.74,
+        "specificity": 0.74,
+        "f1": 0.74,
+        "roc_auc": 0.8157080000000001,
+        "pr_auc": 0.7880249066899351,
+        "brier": 0.17511914670467377,
+        "tn": 370,
+        "fp": 130,
+        "fn": 130,
+        "tp": 370
+      }
+    }
+  },
+  "best_model": "Logistic Regression",
+  "best_params": {
+    "clf__C": 0.03
+  },
+  "screening_threshold": 0.3884,
+  "best_model_test_at_default_threshold": {
+    "threshold": 0.5,
+    "accuracy": 0.749,
+    "precision": 0.7485029940119761,
+    "recall": 0.75,
+    "specificity": 0.748,
+    "f1": 0.7492507492507493,
+    "roc_auc": 0.82232,
+    "pr_auc": 0.796484254292246,
+    "brier": 0.1724250420918496,
+    "tn": 374,
+    "fp": 126,
+    "fn": 125,
+    "tp": 375
+  },
+  "best_model_test_at_screening_threshold": {
+    "threshold": 0.3884,
+    "accuracy": 0.742,
+    "precision": 0.6977124183006536,
+    "recall": 0.854,
+    "specificity": 0.63,
+    "f1": 0.7679856115107914,
+    "roc_auc": 0.82232,
+    "pr_auc": 0.796484254292246,
+    "brier": 0.1724250420918496,
+    "tn": 315,
+    "fp": 185,
+    "fn": 73,
+    "tp": 427
+  },
+  "best_model_test_auc_ci95": [
+    0.7957767202528938,
+    0.8479480299306833
+  ],
+  "diagnostics": {
+    "original_rows_only_cv": {
+      "Logistic Regression": {
+        "cv_roc_auc_mean": 0.4520809864088553,
+        "cv_roc_auc_std": 0.04717290085076459
+      },
+      "Random Forest": {
+        "cv_roc_auc_mean": 0.4956564733081127,
+        "cv_roc_auc_std": 0.031152506140353076
+      },
+      "n_rows": 500
+    },
+    "best_model_test_auc_by_source": {
+      "original": {
+        "n_test_rows": 100,
+        "roc_auc": 0.5010508617065994
+      },
+      "synthetic": {
+        "n_test_rows": 900,
+        "roc_auc": 0.8585722826973153
+      }
+    }
+  }
+}

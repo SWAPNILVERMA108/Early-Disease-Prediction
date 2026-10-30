@@ -1,0 +1,4 @@
+model,cv_roc_auc,cv_roc_auc_std,cv_f1,cv_recall,test_accuracy,test_precision,test_recall,test_specificity,test_f1,test_roc_auc,test_pr_auc,test_brier
+Logistic Regression,0.8156,0.014,0.7364,0.7355,0.749,0.7485,0.75,0.748,0.7493,0.8223,0.7965,0.1724
+Random Forest,0.806,0.0153,0.7336,0.742,0.743,0.7406,0.748,0.738,0.7443,0.8161,0.7842,0.1779
+XGBoost,0.8092,0.0142,0.7364,0.7415,0.74,0.74,0.74,0.74,0.74,0.8157,0.788,0.1751
